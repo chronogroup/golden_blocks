@@ -128,6 +128,7 @@ button, a, a.btn,
 }
 
 .landinginner {
+  padding-top: 8rem;
   height: 100%;
 }
 
@@ -139,7 +140,8 @@ button, a, a.btn,
 
 .leftt {
   /* height: auto; FOR MEDIA QUERY */
-  padding-top: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
 
@@ -157,7 +159,20 @@ button, a, a.btn,
   padding-top: 6rem;
 }
 
+.col-lg-7 {
+  padding-left: 10rem;
+  background-color: #5BBDC8;
 
+}
+
+.col-lg-7 img{
+    width: 120% !important;
+}
+
+.col-lg-5 {
+  padding right: 6rem;
+
+}
 
 
 .home-wrap {
@@ -619,7 +634,31 @@ form-head {
 	margin: 0 5px 0 15px;
   color: #fff;
 }
+/*=============ABOUT US==============*/
+.containerleft {
+  padding-left: 0 !important;
 
+}
+
+.col-md-6 {
+  padding-left: 6rem;
+  position: absolute;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 200%;
+}
+.long{
+  font-size: large;
+  font-weight: bold;
+}
+
+/*=============FOOTER================*/
+
+.page-footer{
+  background-color: #5BBDC8;
+}
 
 /*============= TOP SCROLL =============*/
 
