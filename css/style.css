@@ -52,13 +52,18 @@ html, body {
 
 
 /*============= NAVIGATION =============*/
+
 .navbar-brand img {
-   height: 4rem;
+   height: 3rem;
+   width: 60%;
+   height: 60%;
+   display: block;
 }
 .navbar {
    padding: .7rem 2rem;
    text-transform: uppercase;
-   font-weight: 500;
+   font-weight: 700;
+   font-family: Helvetica;
    letter-spacing: .1rem;
    font-size: .9rem;
    transition: background-color .5s ease;
@@ -102,8 +107,8 @@ button, a, a.btn,
 /* ============= PRACTICE EXPERIMENT */
 
 .top-buffer{
-  margin-top:100px;
-  margin-bottom:100px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 /* body { background: #93979b !important; } */
@@ -129,13 +134,15 @@ button, a, a.btn,
 
 .landinginner {
   padding-top: 8rem;
+  padding-bottom: 4rem;
   height: 100%;
+  background-color: #BFDAE3;
 }
 
 .landinginner img {
   max-width:100%;
   max-height:100%;
-  font-size: 3rem;
+
 }
 
 .leftt {
@@ -145,28 +152,30 @@ button, a, a.btn,
 
 }
 
-.leftt h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
+.rightt {
+  padding-top: 6rem;
+  padding-right: 6rem;
+}
+
+.rigtt h1 {
+
   /* margin: 3em 0 0 1em; */
 }
 
-.leftt p {
-  font-size: 1rem;
+.rigtt p {
+
 }
 
-.rightt {
-  padding-top: 6rem;
-}
+
 
 .col-lg-7 {
   padding-left: 10rem;
-  background-color: #5BBDC8;
+
 
 }
 
 .col-lg-7 img{
-    width: 120% !important;
+    width: 100% !important;
 }
 
 .col-lg-5 {
@@ -174,6 +183,18 @@ button, a, a.btn,
 
 }
 
+.col-lg-5 p {
+  color: black;
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+.col-lg-5 h1 {
+  color: black;
+  font-size: 3.5rem;
+  font-weight: 200;
+  font-family: Helvetica;
+}
 
 .home-wrap {
    clip: rect(0, auto, auto, 0);
@@ -478,7 +499,7 @@ font-size: 1.15rem;
    box-shadow: 0 0 .8rem rgba(0, 0, 0, .075); */
    border: none;
    transition: transform .4s ease;
-   width: 50% !important;
+   width: 80% !important;
    margin: auto;
 }
 
@@ -493,6 +514,10 @@ button.owl-dot:hover span {
 
 /*============= SKILLS SECTION =============*/
 
+.gallery{
+   box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 /*============= CLIENTS SECTION =============*/
 
@@ -637,7 +662,12 @@ form-head {
 /*=============ABOUT US==============*/
 .containerleft {
   padding-left: 0 !important;
+  padding-right: 0 !important;
 
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .col-md-6 {
