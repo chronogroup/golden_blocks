@@ -118,6 +118,13 @@ button, a, a.btn,
 /*============= LANDING PAGE =============*/
 
 /* carousel slides */
+.carousel .slide{
+  height: 760px;
+background-color: #777;
+  object-fit: cover;
+overflow: hidden;
+position: relative;
+}
 
 .carousel-fade .carousel-item {
 	opacity: 0;
