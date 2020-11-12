@@ -977,6 +977,17 @@ a.top-scroll:hover {
   .motto-content{
     padding-top: 0;
   }
+  .carousel{
+    width:auto;
+    position: absolute;
+    min-height:100vh;
+  }
+  .slide{
+    width:auto%;
+    position: absolute;
+    min-height:100vh;
+  }
+}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
