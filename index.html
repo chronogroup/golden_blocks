@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- css w built in dump code -->
     <link rel="stylesheet" href="css/plugins.css">
+    <!-- gallery css -->
+    <link rel="stylesheet" href="grid-gallery.css">
 
     <!-- Google Fonts https://fonts.google.com/ -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,500,900&display=swap" rel="stylesheet">
@@ -201,6 +203,8 @@ quality end products that will last generations and will be loved by all members
         </div>
 			</div>
 		</div>
+
+            <div class="row bottom-buffer"></div>
 		<!-- End Fixed BG IMG Light -->
 
     <!-- TO DO
@@ -216,117 +220,109 @@ quality end products that will last generations and will be loved by all members
 	<!-- End Team Section -->
 
   <!-- Start Features Section -->
-<section id="Gallery" class="offset">
+<section id="Gallery" class="offset rambo">
 
-  <!-- Start Jumbotron -->
-  <div class=" m-0 py-5">
+
 
     <div class="col-12 os-animation" data-animation="fadeInUp">
       <h3 class="heading">Gallery</h3>
       <div class="heading-underline"></div>
     </div>
 
+      <div class="row grid" id="gallery" >
+        <div class="col-6 col-md-4 gallerygrid">
+          <img class="w-100 pic" src="assets/illustrations/house1.jpg" data-toggle="modal" data-target="#galleryModal1">
+        </div>
+        <div class="w-100 col-6 col-md-4 gallerygrid">
+          <img class="w-100 pic" src="assets/illustrations/house2.jpg" data-toggle="modal" data-target="#galleryModal2">
+        </div>
+        <div class="col-6 col-md-4 gallerygrid">
+          <img class="w-100 pic" src="assets/illustrations/house3.jpg" data-toggle="modal" data-target="#galleryModal3">
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 gallerygrid">
+          <img class="w-100 pic" src="assets/illustrations/house4.jpg" data-toggle="modal" data-target="#galleryModal4">
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 gallerygrid">
+          <img class="w-100 pic" src="assets/illustrations/house2.jpg" data-toggle="modal" data-target="#galleryModal2">
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 gallerygrid">
+          <img class="w-100 pic" src="assets/illustrations/house3.jpg" data-toggle="modal" data-target="#galleryModal3">
+        </div>
+      </div>
 
-
-    <div class="container">
-      <div class="row px-lg-4 px-xl-5">
-
-        <div class="col-sm-12 col-md-12 os-animation" data-animation="fadeInDown">
-          <div class="feature card-body p-5 my-4 mx-2">
-            <div class="px-2">
-              <img src="assets/illustrations/house1.jpg" class="gallery rounded">
-              </p>
-            </div>
+      <div id="galleryModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="assets/illustrations/house1.jpg" class="img-fluid" >
+              </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-12 col-md-12 os-animation" data-animation="fadeInDown">
-          <div class="feature card-body p-5 my-4 mx-2">
-            <div class="px-2">
-                <img src="assets/illustrations/house2.jpg" class="gallery rounded">
-              </p>
-            </div>
+      <div id="galleryModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="assets/illustrations/house2.jpg" class="img-fluid">
+              </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-12 col-md-12 os-animation" data-animation="fadeInDown">
-          <div class="feature card-body p-5 my-4 mx-2">
-            <div class="px-2">
-                <img src="assets/illustrations/house3.jpg" class="gallery rounded" >
-              </p>
-            </div>
+      <div id="galleryModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="assets/illustrations/house3.jpg" class="img-fluid">
+              </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-sm-12 col-md-12 os-animation" data-animation="fadeInDown">
-          <div class="feature card-body p-5 my-4 mx-2">
-            <div class="px-2">
-                <img src="assets/illustrations/house4.jpg" class="gallery rounded">
-              </p>
-            </div>
+      <div id="galleryModal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="assets/illustrations/house4.jpg" class="img-fluid">
+              </div>
           </div>
         </div>
+      </div>
 
-
-
-      </div> <!-- End Row -->
-    </div> <!-- End Container-->
-  </div> <!-- End Jumbotron -->
-
-
-<!--
-<div class="container">
-	<div class="row">
-		<div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                         alt="Another alt text">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                   data-target="#image-gallery">
-                    <img class="img-thumbnail"
-                         src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                         alt="Another alt text">
-                </a>
-            </div>
-
--->
-
+        <div class="row bottom-buffer"></div>
 
 
 
 </section>
-<!-- End of Features Section -->
+
 
 
 <!-- Services ------>
 
-<section id="Services">
-  <div class-="container-fluid">
-    <div class="row top-buffer">
-      <div class="col">
-        <h3 class="heading"> Services </h3>
-        <div class="row">
-        <div class="col-md card shadow-lg">
-          <div class="card-body">
-            <h5 class="card-title"> Brownstone Restoration </h5>
-            <p class="card-text">-Brownstone façade restoration
+<section id="Services" class="offset rambo">
+      <div class="col-12 os-animation" data-animation="fadeInUp">
+        <h3 class="heading">Services</h3>
+        <div class="heading-underline"></div>
+      </div>
+      <div class-="container-fluid">
+        <div class="row top-buffer">
+        <div class="col-12 col-md-3">
+          <div class="card servicecard shadow-lg">
+          <div class="card-body servicebody">
+            <h5 class="card-title servicetitle"> Brownstone Restoration </h5>
+            <p class="card-text servicetext">-Brownstone façade restoration
                                 <br>-Brownstone stoop restoration
                                 <br>-Limestone restoration
                                 <br>-Bluestone restoration</p>
         </div>
       </div>
-      <div class="col-md card shadow-lg">
-        <div class="card-body">
-          <h5 class="card-title"> Masonry Concrete </h5>
-          <p class="card-text">-Stucco work
+    </div>
+      <div class="col-12 col-md-3">
+        <div class="card servicecard shadow-lg">
+        <div class="card-body servicebody">
+          <h5 class="card-title servicetitle"> Masonry Concrete </h5>
+          <p class="card-text servicetext">-Stucco work
                               <br>-California stucco
                               <br>-Sidewalk/concrete work
                               <br>-Thorocoat/ thoroseal
@@ -338,26 +334,29 @@ quality end products that will last generations and will be loved by all members
                               <br>-Demolition work</p>
       </div>
     </div>
-    <div class="col-md card shadow-lg">
-      <div class="card-body">
-        <h5 class="card-title"> Brick Grinding &amp; Pointing </h5>
-        <p class="card-text">-Brick Replacement
+  </div>
+    <div class="col-12 col-md-3">
+      <div class="card servicecard shadow-lg">
+      <div class="card-body servicebody">
+        <h5 class="card-title servicetitle"> Brick Grinding &amp; Pointing </h5>
+        <p class="card-text servicetext">-Brick Replacement
                             <br>-Brick Sealer (Waterproofing)
                             <br>-Power wash/Steam wash
-                            <br>-Pressure wash
                             <br>-Siding
                             <br>-Window lintels &amp; window sills
                             <br>-Window caulking
                             <br>-Fire escapes
                             <br>-Gutters
-                            <br>-Scupper /Drains
+                            <br>-Scupper/Drains
                             <br>-All kinds of vents</p>
     </div>
   </div>
-  <div class="col-md card shadow-lg">
-    <div class="card-body">
-      <h5 class="card-title"> Design &amp; Remodeling </h5>
-      <p class="card-text">-Renovation &amp; restoration work
+</div>
+  <div class="col-12 col-md-3">
+    <div class="card servicecard shadow-lg">
+    <div class="card-body servicebody">
+      <h5 class="card-title servicetitle"> Design &amp; Remodeling </h5>
+      <p class="card-text servicetext">-Renovation &amp; restoration work
                            <br>-Kitchen &amp; Bathroom
                            <br>-Plaster &amp; Paint
                            <br>-Dry wall
@@ -370,125 +369,72 @@ quality end products that will last generations and will be loved by all members
                            <br>-Wooden and metal beams</p>
   </div>
 </div>
-
-  </div>
 </div>
+  </div>
 
+        <div class="row top-buffer"></div>
 
 
 <!-- About Us Section -->
-	<section id="about">
+	<section id="about" class="offfset rambo">
     <div class="containerleft">
         <div class="row top-buffer">
-            <div class="col">
-              <img src="assets/illustrations/about us.png" class"image-responsive" width="100%">
-
+            <div class="col-lg-4">
+              <h3 class="heading">About Us</h3>
+              <p class="about">Since 1976 we have been providing our services to the NYC area, with a focus on Brooklyn and Queens. We are a family owned business that was started by a first-generation immigrant family. The business has been handed down and two generations later, we continue to serve the community and help them with their construction needs. As a family owned business, we strive to provide families and residences with the utmost quality work that is both durable and aesthetically pleasing.</p>
+            </div>
+            <div class="col-lg-8">
+              <img src="assets/illustrations/bricklayer.png" class="img-fluid aboutimg">
+            </div>
     </div>
   </div>
-</div>
 
-
+</section>
 <!--- End Section --->
 
 
 
-<section id="contact">
+<section id="contact" class="offset rambo">
 
-<!---
-  <div class=" m-0 py-5">
-    <div class="col-12 os-animation" data-animation="fadeInUp">
-      <h3 class="heading">Contact Us</h3>
-      <div class="heading-underline"></div>
-    </div>
+  <div class="col-sm-12">
+    <div class="card contactcard shadow-lg">
+      <div class="card-content">
+        <div class="card-body">
+          <h4 class="card-title contacttitle">Contact Us</h4>
+          <h6 class="card-subtitle">&nbsp;Get a free quote now!</h6>
+        </div>
+        <div class="card-body">
+          <form class="form">
+            <div class="form-body">
+              <div class="form-group">
+                <label for="donationinput1" class="sr-only">Name</label>
+                <input type="text" id="donationinput1" class="form-control" placeholder="name"
+                  name="name">
+              </div>
 
+              <div class="form-group">
+                <label for="donationinput2" class="sr-only">Email</label>
+                <input type="email" id="donationinput2" class="form-control" placeholder="email"
+                  name="email">
+              </div>
 
-    <form id="contactForm" class="form-custom my-5 p-5">
-      <h4 class="form-head">Get an Estimate now</h4>
+              <div class="form-group">
+                <label for="donationinput7" class="sr-only">Message</label>
+                <textarea id="donationinput7" rows="5" class="form-control square" name="message"
+                  placeholder="message"></textarea>
+              </div>
+            </div>
 
-      <p class="form-p" type="Name:">
-        <input
-          type="text"
-          name="Name"
-          id="userName"
-          autocomplete="off"
-          class="form-input"
-          placeholder="Write your name here...">
-        </input>
-      </p>
-
-      <p class="form-p" type="Email:">
-        <input
-          type="text"
-          name="Email"
-          id="userEmail"
-          autocomplete="off"
-          class="form-input"
-          placeholder="How can we get back...">
-        </input>
-      </p>
-
-      <p class="form-p" type="Message:">
-        <textarea name="Message" id="userMessage" rows="3"class="form-input" placeholder="Share your thoughts..."></textarea>
-      </p>
-
-      <button id="submit" class="form-b" type="button">Send Message</button>
-      <div class="peek-out">
-        <a class="peek" href="tel:+917-727-5506">
-          <span class="fa fa-phone"></span>  (718) 123-1234
-        </a>
-        <a class="peek" href="mailto:contact@chronogrp.com?Subject=Visited%20Website%20--">
-          <span class="fa fa-envelope"></span>  goldenblocksllc@
-        </a>
-
+            <div class="form-actions center">
+              <button type="submit" class="btn btn-outline-primary">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </form>
---->
-
-<div class="container-fluid contact">
-        <h3 class="heading">Contact Us</h3>
-	<div class="row">
-		<div class="col-md-3 form">
-			<div class="contact-info">
-				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-				<h2>Reach out to us</h2>
-				<h4>We can give you a free quote!</h4>
-			</div>
-		</div>
-		<div class="col-md-9">
-			<div class="contact-form">
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="fname">First Name:</label>
-				  <div class="col-sm-10">
-					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
-				  <div class="col-sm-10">
-					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="email">Email:</label>
-				  <div class="col-sm-10">
-					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="comment">Comment:</label>
-				  <div class="col-sm-10">
-					<textarea class="form-control" rows="5" id="comment"></textarea>
-				  </div>
-				</div>
-				<div class="form-group">
-				  <div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Submit</button>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
+    </div>
+  </div>
 </div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 </section>
@@ -532,6 +478,9 @@ quality end products that will last generations and will be loved by all members
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Baguettebox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+
 
   	<!-- SCRIPT SRC FILES END -->
   </body>
@@ -669,5 +618,7 @@ quality end products that will last generations and will be loved by all members
 
 
   </footer>
+
+
 
 </html>
