@@ -1,5 +1,8 @@
 /*============= RESETS =============*/
 
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
 $enable-shadows;
 
 /*-- iPhone X Remove Gutters for non rect devices --*/
@@ -91,7 +94,7 @@ html, body {
 .navbar.solid,
 .navbar.solid-toggle {
   /* mobile navbar toggle hamburger transition HERE */
-   background: #1787bf !important;
+   background: #6eb1dc !important;
    box-shadow: 0 1rem 1rem -1rem rgba(0,0,0,.2);
    transition: background-color 1s ease;
 }
@@ -115,6 +118,9 @@ button, a, a.btn,
   margin-bottom: 6rem;
 }
 
+.bottom-buffer{
+  margin-bottom: 2rem;
+}
 /* body { background: #93979b !important; } */
 /* messing around with background contrast */
 
@@ -125,10 +131,9 @@ button, a, a.btn,
 .carousel .slide{
   max-width: 100%;
   height:auto;
-background-color: #777;
+  background-color: #777;
   object-fit: cover;
-overflow: hidden;
-position: relative;
+  overflow: hidden;
 }
 
 .carousel-fade .carousel-item {
@@ -162,6 +167,8 @@ position: relative;
   max-height: 100%;
   display: block;
 }
+
+
 /*----text box -----*/
 .title{
   font-family: Helvetica;
@@ -177,12 +184,11 @@ position: relative;
 }
 
 .motto {
-  z-index: 1;
+  position: absolute;
+  z-index: 100;
   float: right;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-top: 22rem;
-  padding-bottom: 6rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -368,7 +374,44 @@ position: relative;
    opacity: .8;
 }
 
-/*============= FEATURES SECTION =============*/
+/*============= Gallery SECTION =============*/
+
+
+.grid{
+  margin-left: 10px;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+
+.gallerygrid{
+padding: 1rem;
+}
+
+.pic {
+  background-color: #000 !important;
+  display: block;
+}
+
+.pic:hover {
+  background-color: #000 !important;
+  opacity:0.5;
+  z-index: 100;
+  display: block;
+}
+
+.modal{
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  margin-right: 0px !important;
+}
+
+.modal-dialog{
+  justify-content: center;
+}
+
+.modal-open {
+    overflow: hidden;
+}
 
 .btn-sm {
    border-width: medium;
@@ -396,7 +439,7 @@ h3.heading {
 .heading-underline {
    width: 3rem;
    height: .2rem;
-   background-color: #1A6EB2;
+   background-color: #ffbf00;
    margin: 0 auto 2rem;
 }
 
@@ -436,24 +479,52 @@ h3.heading {
    margin-left: -10px;
 } */
 /*============= SERVICES SECTION =============*/
-.card{
-  margin-left: 2rem;
-  margin-right: 2rem;
-  width: 18rem;
-  background-color: #d1901a;
+
+.col-md-3{
+  display: block;
 }
 
-.card-title{
+.servicecard{
+  height: calc(70vh);
+  width: 18rem;
+  background-color: #ffcc66;
+  border-radius: 0;
+  border: none;
+  transition: transform .4s ease;
+  width: 90% !important;
+  margin: auto;
+}
+
+.servicetitle{
+  padding: 3%;
   font-family: Helvetica;
   font-size: 2rem;
-  font-style: bold;
+  font-weight: bold;
 }
 
-.card-text{
+.servicetext{
+  padding: 8%;
   font-family: Helvetica;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
+.servicecard:hover {
+   transform: scale(.95);
+}
+
+
+.about{
+  margin-left: 12%;
+  font-size: 20px;
+  padding-right: 1%;
+  margin-right: 5%;
+}
+
+.aboutimg{
+  float: right;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
 
 /*===== FIXED BACKGROUND IMG DARK =====*/
 
@@ -601,9 +672,6 @@ font-size: 1.15rem;
 }
 
 
-.card-transparent:hover {
-   transform: scale(.9);
-}
 button.owl-dot.active span,
 button.owl-dot:hover span {
    background: #1A6EB2!important;
@@ -648,7 +716,7 @@ blockquote .svg-inline--fa {
    color: white;
    /* background-color: #505962; */
 }
-.row.outer {
+.outer {
    /* background-color: rgba(57, 63, 70, .95); */
    /* background-image: linear-gradient(to right, rgba(57, 63, 70, .4), rgba(57, 63, 70, 1)); */
    padding: 1rem 2rem 3rem;
@@ -669,19 +737,33 @@ blockquote .svg-inline--fa {
    margin: 1.5rem 0;
 }
 
-/*--- Contact Form --*/
+/*---  Form --*/
+
+.contactcard{
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  width: 50%;
+  background: #ffbb33;
+}
+.form{
+  background: #ffcc66;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.contacttitle{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 
 .contact{
   margin-left: 2rem;
   padding: 4%;
   height: 400px;
 }
-.form{
-  background: #ff9b00;
-  padding: 4%;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
+
 .contact-info{
   margin-top:10%;
 }
@@ -825,7 +907,7 @@ form-head {
 /*=============FOOTER================*/
 
 .page-footer{
-  background-color: #1787bf;
+  background-color: #6eb1dc;
 }
 
 /*============= TOP SCROLL =============*/
@@ -851,21 +933,36 @@ a.top-scroll:hover {
 
 /*============= MEDIA QUERIES =============*/
 
+@media (min-width: 992px) {
+  .motto {
+    position: absolute;
+    max-height: calc(0.5*vh);
+    left: 40%;
+    top: 6rem;
+    bottom: 4rem;
+    margin-top: 14rem;
+    padding: 50px;
+    margin-left: -375px;
+    z-index: 100;
+}
+
+.motto-content {
+    max-height: calc(0.5*vh);
+    width: 50% ;
+    float: right;
+    height: auto;
+    background: #73b1d1;
+    color: #fff;
+    margin-right:15px;
+    padding: 2rem;
+    z-index: 100;
+}
+}
+
+
 /* Devices under 992px (lg) */
 @media (max-width: 991.98px) {
-   /* .caption h1 {
-      font-size: 3.5rem;
-      letter-spacing: .2rem;
-      padding-bottom: .8rem;
-   }
-   .caption h3 {
-      font-size: 2.2rem;
-      padding-bottom: 1.7rem;
-   }
-   .caption .btn-lg {
-      padding: .7rem 1.2rem;
-      font-size: 1rem;
-   } */
+
    .leftt {
      padding-top: 8rem;
    }
@@ -876,19 +973,20 @@ a.top-scroll:hover {
      padding-top: 2.5rem;
    }
 
-}
-
-@media (min-width: 768px) {
    .motto {
      position: absolute;
-     left: 50%;
-     top: 16rem;
-     bottom: 12rem;
-     padding: 50px ;
+     max-height: calc(0.5*vh);
+     left: 40%;
+     top: 6rem;
+     bottom: 4rem;
+     margin-top: 14rem;
+     padding: 50px;
      margin-left: -375px;
+     z-index: 100;
  }
 
  .motto-content {
+     max-height: calc(0.5*vh);
      width: 50% ;
      float: right;
      height: auto;
@@ -896,24 +994,55 @@ a.top-scroll:hover {
      color: #fff;
      margin-right:15px;
      padding: 2rem;
+     z-index: 100;
+ }
+ .title {
+   font-size: 30px;
+ }
+ .land{
+   font-size: 15px;
+ }
+ .carousel{
+   width:auto;
+   position: relative;
+   min-height:100vh;
+ }
+ .slide{
+   width:auto%;
+   position: relative;
+   min-height:100vh;
+ }
+ .servicecard{
+   height: calc(60vh);
+   width: 14rem;
+   border-radius: 1;
+   border: none;
+   transition: transform .4s ease;
+   width: 80% !important;
+   margin: auto;
+   margin-top: 5%;
+ }
+
+ .servicetitle{
+   padding: 3%;
+   font-family: Helvetica;
+   font-size: 2rem;
+   font-weight: bold;
+ }
+
+ .servicetext{
+   padding: 8%;
+   font-family: Helvetica;
+   font-size: 1.1rem;
+ }
+ .contactcard{
+   width: 80%;
  }
 }
 
-
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
-   /* .caption h1 {
-      font-size: 2.7rem;
-      letter-spacing: .15rem;
-      padding-bottom: .5rem;
-   }
-   .caption h3 {
-      font-size: 1.6rem;
-      padding-bottom: 1.2rem;
-   }
-   .caption .btn-lg {
-      padding: .6rem 1.1rem;
-   } */
+
    .leftt {
      padding-top: 3em;
    }
@@ -927,22 +1056,34 @@ a.top-scroll:hover {
    .rightt {
      padding-top: 2rem;
    }
+   .servicecard{
+     height: calc(60vh);
+     width: 14rem;
+     border-radius: 1;
+     border: none;
+     transition: transform .4s ease;
+     width: 80% !important;
+     margin: auto;
+     margin-top: 5%;
+   }
+
+   .servicetitle{
+     padding: 3%;
+     font-family: Helvetica;
+     font-size: 2rem;
+     font-weight: bold;
+   }
+
+   .servicetext{
+     padding: 8%;
+     font-family: Helvetica;
+     font-size: 1.1rem;
+   }
 }
 
 /* Devices under 576px (sm) */
 @media (max-width: 575.98px) {
-    /* .caption {
-      top: 42%;
-    }
-   .caption h1 {
-      font-size: 2rem;
-      letter-spacing: .1rem;
-      padding-bottom: .6rem;
-   }
-   .caption h3 {
-      font-size: 1.3rem;
-      padding-bottom: 1rem;
-   } */
+
    .navbar {
      padding: .5rem 1rem;
    }
@@ -966,9 +1107,8 @@ a.top-scroll:hover {
    .peek-out {
      right: -.5rem;
    }
-
-
 }
+
 
 @media (max-width: 480px) {
   .motto{
@@ -979,12 +1119,12 @@ a.top-scroll:hover {
   }
   .carousel{
     width:auto;
-    position: absolute;
+    position: relative;
     min-height:100vh;
   }
   .slide{
     width:auto%;
-    position: absolute;
+    position: relative;
     min-height:100vh;
   }
 }
