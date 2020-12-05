@@ -484,6 +484,10 @@ h3.heading {
   display: block;
 }
 
+.servicebody{
+
+}
+
 .servicecard{
   height: calc(70vh);
   width: 18rem;
@@ -493,6 +497,8 @@ h3.heading {
   transition: transform .4s ease;
   width: 90% !important;
   margin: auto;
+  padding-top: 5%;
+  border-radius: 25px;
 }
 
 .servicetitle{
@@ -500,6 +506,7 @@ h3.heading {
   font-family: Helvetica;
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .servicetext{
@@ -1021,6 +1028,9 @@ a.top-scroll:hover {
    width: 80% !important;
    margin: auto;
    margin-top: 5%;
+   text-align: center;
+   padding-top: 5%;
+   border-radius: 25px;
  }
 
  .servicetitle{
@@ -1028,6 +1038,7 @@ a.top-scroll:hover {
    font-family: Helvetica;
    font-size: 2rem;
    font-weight: bold;
+   text-align: center;
  }
 
  .servicetext{
@@ -1065,6 +1076,8 @@ a.top-scroll:hover {
      width: 80% !important;
      margin: auto;
      margin-top: 5%;
+     padding-top: 5%;
+     border-radius: 25px;
    }
 
    .servicetitle{
@@ -1072,6 +1085,7 @@ a.top-scroll:hover {
      font-family: Helvetica;
      font-size: 2rem;
      font-weight: bold;
+     text-align: center;
    }
 
    .servicetext{
